@@ -1,0 +1,26 @@
+{
+  "name": "es2015",
+  "version": "1.0.0",
+  "description": "es2015",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanghong2013/ES6.git"
+  },
+  "keywords": [
+    "es2015"
+  ],
+  "author": "wanghong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wanghong2013/ES6/issues"
+  },
+  "homepage": "https://github.com/wanghong2013/ES6#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0"
+  }
+}
