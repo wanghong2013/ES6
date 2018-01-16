@@ -1,4 +1,4 @@
 'use strict';
 
-import {fruit,cake} from '02';
-console.log(fruit,cake);
+import fruit from './02';
+console.log(fruit);
