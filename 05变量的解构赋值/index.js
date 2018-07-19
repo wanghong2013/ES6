@@ -41,14 +41,42 @@
 // console.log(x) ;  // let x ;undefined 
 
 
-// let  [ y = 1] = [];
+// let  [ y = 1] = [];  //指定默认值 
 
 // console.log(y)  //1
 
 
+[a, b, ...rest] = [10, 20, 30, 40, 50];
+console.log(a); // 10
+console.log(b); // 20
+console.log(rest); // [30, 40, 50]
+
+
+// var [a, ...b] = [1, 2, 3];
+// console.log(a); // 1
+// console.log(b); // [2, 3]
+
  //---------------------------------------------------------------------------
  //2对象的解构赋值
 
+/**
+ * 对象的解构赋值和数组的有一定的区别，数组的元素是按照顺序排列的
+ * 对象必须是同名的属性才能够取到值
+ * 
+ */ 
+
+ //变量名和属性名一致
+//  let {a ,b } = {b:'bb',a:'aaa'}
+
+//  console.log(a,b)  //aaa bb
+
+ //变量名和属性名不一致
+
+// let {a : b} = { a : 1}
+
+// console.log(b)  //1
+
+// console.log(a)  //报错a is not defined
 
 
 
@@ -58,3 +86,24 @@
 
   //---------------------------------------------------------------------------
  //3基本类型的解构赋值
+
+//字符串的解构赋值
+
+// let [a,b,c,d] = '1234';
+// console.log(a,b,c,d)
+
+
+// let {length:len} = 'miaov';
+// console.log(len); //5
+
+
+// let {toString:ts} =1 ;
+
+// let {toString:bs} = true;
+// console.log(ts) //ƒ toString() { [native code] }
+// console.log(bs)  // ƒ toString() { [native code] }
+
+
+// console.log(ts === Number.prototype.toString)  //true
+
+// console.log(bs === Boolean.prototype.toString)  //true
