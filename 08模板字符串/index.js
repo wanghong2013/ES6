@@ -25,3 +25,9 @@ console.log( str2 );
 
 let str3 = `my name is ${3>2?'moli':'xiaoming'}`;
 console.log(str3);
+
+
+
+
+
+

@@ -46,10 +46,10 @@
 // console.log(y)  //1
 
 
-[a, b, ...rest] = [10, 20, 30, 40, 50];
-console.log(a); // 10
-console.log(b); // 20
-console.log(rest); // [30, 40, 50]
+// [a, b, ...rest] = [10, 20, 30, 40, 50];
+// console.log(a); // 10
+// console.log(b); // 20
+// console.log(rest); // [30, 40, 50]
 
 
 // var [a, ...b] = [1, 2, 3];
@@ -107,3 +107,54 @@ console.log(rest); // [30, 40, 50]
 // console.log(ts === Number.prototype.toString)  //true
 
 // console.log(bs === Boolean.prototype.toString)  //true
+
+
+
+//案例 
+
+//以前变量的赋值
+let obj = {
+  firstName:'Mike',
+  lastName:'json',
+  hj:{
+    a:1,
+    b:2
+  }
+}
+
+// let f = obj.firstName,
+//   l = obj.lastName
+
+//let {firstName:f,lastName:l} = obj  //格式 赋值属性：要赋值的变量
+
+//简化
+
+// let {firstName,lastName} = obj;
+
+// console.log(`${firstName} ${lastName}`)
+
+//let {hj} = obj;
+
+// console.log(hj); //{a:1,b:2}
+
+//嵌套的解构
+// let {hj:{a,b},hj} = obj;
+
+// console.log(a,b,hj) //1,2
+
+
+
+
+// function logNames(obj){
+//   console.log(`${ obj.firstName} ${obj.lastName}`)
+// }
+
+
+
+//在函数参数里面可以直接解构
+function logNames({firstName,lastName},n){
+  console.log(`${ firstName} ${lastName} ${n}`) //a b
+}
+
+
+logNames({firstName:'a',lastName:'b'},880);
