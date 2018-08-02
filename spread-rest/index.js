@@ -58,9 +58,18 @@
 
 
 //在解构对象的时候使用 rest
- let obj3 = {a:1,b:2,c:3,d:4}
+//  let obj3 = {a:1,b:2,c:3,d:4}
 
 
- let {a,b, ...g} = obj3;
+//  let {a,b, ...g} = obj3;
  
- console.log(a,b,g); //1 2 {c: 3, d: 4} //g 就是没有被解构出来剩余的
+//  console.log(a,b,g); //1 2 {c: 3, d: 4} //g 就是没有被解构出来剩余的
+
+
+
+
+//数组展开赋值
+
+let arr = [1,2,3];
+let arr2 = [...arr,4];
+console.log(arr2)

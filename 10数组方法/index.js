@@ -134,23 +134,29 @@
 
 
   //案例 累加
- let arr6 = [1,2,3,4].reduce((accu,ele,i)=>{
-    
-  console.log(accu,ele)
+//  let arr6 = [1,2,3,4].reduce((accu,ele,i)=>{
+//
+//   console.log(accu,ele)
+//
+//   return accu +ele
+//
+// },0)
+//
+// console.log(arr6);  //10
+//
+//
+// //案例2 reduce可以监控状态的变化
+// let arr7 = [1,2,3,4].reduce((accu,ele,i)=>{
+//   if(ele>1) accu.push(ele);
+//
+//   return accu
+//
+// },[])
+//
+// console.log(arr7);  //[2, 3, 4]
 
-  return accu +ele
+let arr1 = [1,2,3]
+let arr3 = [{content:'第一次数据'},{content:'第2次数据'},{content:'第3次数据'}]
+let arr2 = [{content:'123'},...arr3];
 
-},0)
-
-console.log(arr6);  //10 
-
-
-//案例2 reduce可以监控状态的变化
-let arr7 = [1,2,3,4].reduce((accu,ele,i)=>{
-  if(ele>1) accu.push(ele);
-
-  return accu 
-
-},[])
-
-console.log(arr7);  //[2, 3, 4]
+console.log(arr2)
