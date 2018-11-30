@@ -46,13 +46,13 @@
   * 
   */
 
-//   let arr3 = [1,2,3,4].filter((ele,i)=>{
-//     return ele>3 
+  let arr3 = [1,2,3,4].filter((ele)=>{
+    return ele!==2 
 
 //     //reutrn 返回值为真，当前元素会被保留下来 返回值为假，当前遍历到元素会被移出去
-//   })
+  })
 
-//   console.log(arr3); //[4]
+  console.log(arr3); //[4]
 
 
 
@@ -155,8 +155,8 @@
 //
 // console.log(arr7);  //[2, 3, 4]
 
-let arr1 = [1,2,3]
-let arr3 = [{content:'第一次数据'},{content:'第2次数据'},{content:'第3次数据'}]
-let arr2 = [{content:'123'},...arr3];
+// let arr1 = [1,2,3]
+// let arr3 = [{content:'第一次数据'},{content:'第2次数据'},{content:'第3次数据'}]
+// let arr2 = [{content:'123'},...arr3];
 
-console.log(arr2)
+// console.log(arr2)
