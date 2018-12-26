@@ -3,3 +3,5 @@ var echo=function(value){
     console.log(value)
 }
 export {sex,echo}  
+
+//模块导出
