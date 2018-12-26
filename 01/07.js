@@ -201,3 +201,6 @@ function deepCompare(x, y) {
 
 
 console.log(deepCompare(obj1,obj2))
+
+
+//深拷贝

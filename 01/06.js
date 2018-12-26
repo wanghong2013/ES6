@@ -13,3 +13,6 @@ let obj2 = {
 
 obj1 = Object.assign(obj1,obj2)
 console.log(obj1);
+
+
+//对象合并，浅拷贝

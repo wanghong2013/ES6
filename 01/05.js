@@ -1,9 +1,10 @@
 let arr = [];
 
-for(let i= 1;i<=54;i++){
-  arr.push(i);
-}
+// for(let i= 1;i<=54;i++){
+//   arr.push(i);
+// }
 
+//0-54随机数
 let k = Math.round(Math.random()*(54-1)+1);
 console.log(k);
 //console.log(arr);
