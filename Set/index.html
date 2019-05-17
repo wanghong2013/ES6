@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="list">
+      <li>item01</li>
+      <li>item02</li>
+      <li>item03</li>
+      <li>item04</li>
+      <li>item05</li>
+      <li>item06</li>
+      <li>item07</li>
+      <li>item08</li>
+      <li>item09</li>
+      <li>item10</li>
+      <li>item11</li>
+      <li>item12</li>
+      <li>item13</li>
+      <li>item14</li>
+      <li>item15</li>
+      <li>item16</li>
+      <li>item17</li>
+      <li>item18</li>
+      <li>item19</li>
+      <li>item20</li>
+    </ul>
+    <script>
+      window.onload = () => {
+        const set = new Set(document.querySelectorAll("li"));
+        console.log(set);
+        console.log(typeof set);
+        console.log(Array.isArray(set));
+      };
+    </script>
+  </body>
+</html>
