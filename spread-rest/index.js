@@ -27,15 +27,15 @@
 
 //展开一个对象
 
-    // let obj = { a:1 ,b:3,c:30}
+// let obj = { a:1 ,b:3,c:30}
 
-    // console.log(
-    //     {
-    //         c:20, //这里的c值会被 obj中的c的值覆盖 
-    //         name:'sjdlak',
-    //         ...obj
-    //     } //{name: "sjdlak", a: 1, b: 3}
-    // )
+// console.log(
+//     {
+//         c:20, //这里的c值会被 obj中的c的值覆盖 
+//         name:'sjdlak',
+//         ...obj
+//     } //{name: "sjdlak", a: 1, b: 3}
+// )
 //这里要注意如果前面有值，在展开的时候会覆盖值 ，以最后的值为准 
 
 
@@ -48,12 +48,12 @@
  */
 
 
- //在函数形参里使用rest
-//  function fun2(a,dd,...b){ //这里..b代表剩余的参数 
-//     console.log(a,dd,b)
-//  }
+//在函数形参里使用rest
+function fun2(a, dd, ...b) { //这里..b代表剩余的参数 
+    console.log(a, dd, b)
+}
 
-//  fun2(1,2,3,4); //1 2 (2) [3, 4]
+fun2(1, 2, 3, 4); //1 2 (2) [3, 4]
 
 
 
@@ -62,7 +62,7 @@
 
 
 //  let {a,b, ...g} = obj3;
- 
+
 //  console.log(a,b,g); //1 2 {c: 3, d: 4} //g 就是没有被解构出来剩余的
 
 
@@ -70,6 +70,6 @@
 
 //数组展开赋值
 
-let arr = [1,2,3];
-let arr2 = [...arr,4];
-console.log(arr2)
+// let arr = [1,2,3];
+// let arr2 = [...arr,4];
+// console.log(arr2)
