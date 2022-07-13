@@ -1,2 +1,16 @@
 {
+  "editor.fontSize": 13,
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "cSpell.words": ["vuex", "vueuse", "pinia", "commitlint", "echarts"],
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
