@@ -33,3 +33,9 @@ let proxyObj = new Proxy(person, handler);
 console.log(proxyObj.age, 'age');
 console.log(proxyObj.school, 'school');
 console.log(proxyObj.name, 'name');
+
+proxyObj.name = 'zhangsan';
+console.log(proxyObj.name, 'name');
+
+proxyObj.children.name = 'lis';
+console.log(proxyObj.children.name, 'proxyObj.children.name');
